@@ -5,6 +5,7 @@ class Produto:
         self.descricao = descricao
         self.marca = marca
         self.modelo = modelo
+        self.produtos_cadastrados = []
 
     def cadastrar(self):
         nome = input('Digite o nome do produto automotivo: ')
@@ -18,3 +19,5 @@ class Produto:
         modelo = input('Digite o modelo do produto: ')
 
         produto = Produto(nome, preco, descricao, marca, modelo)
+
+        self.produtos_cadastrados.append(produto)
