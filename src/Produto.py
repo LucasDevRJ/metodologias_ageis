@@ -5,3 +5,16 @@ class Produto:
         self.descricao = descricao
         self.marca = marca
         self.modelo = modelo
+
+    def cadastrar(self):
+        nome = input('Digite o nome do produto automotivo: ')
+
+        preco = float(input('Digite o preço do produto: '))
+
+        descricao = input('Digite a descrição do produto: ')
+
+        marca = input('Digite a marca do produto: ')
+
+        modelo = input('Digite o modelo do produto: ')
+
+        produto = Produto(nome, preco, descricao, marca, modelo)
