@@ -1,10 +1,12 @@
-from src import produto
-from src.produto import Produto
+from src.produto import Produto  # Importação da classe Produto
 
 
+# Método para testar o método de cadastro do produto
 def testar_metodo_cadastrar():
-    produto = Produto('', 0.0, '', '', '')  # Criando uma instância da classe Produto (não importa os dados iniciais)
-    produtos_cadastrados = produto.cadastrar()  # Chamando o método cadastrar
+    # Criando uma instância da classe Produto
+    produto = Produto('', 0.0, '', '', '')
+    # Chamando o método cadastrar
+    produtos_cadastrados = produto.cadastrar()
 
     # Verificando se os produtos foram cadastrados corretamente
     assert len(produtos_cadastrados) == 3  # Deve haver 3 produtos cadastrados
@@ -13,11 +15,11 @@ def testar_metodo_cadastrar():
     assert produtos_cadastrados[2].marca == 'Vonixx'  # Verificando a marca do terceiro produto
 
     print("Testes realizados com sucesso!")
-    produtos_cadastrados[0].exibir_produto()
+    produtos_cadastrados[0].exibir_produto()  # Exibindo os valores do primeiro Produto
     print('\n')
-    produtos_cadastrados[1].exibir_produto()
+    produtos_cadastrados[1].exibir_produto()  # Exibindo os valores do segundo Produto
     print('\n')
-    produtos_cadastrados[2].exibir_produto()
+    produtos_cadastrados[2].exibir_produto()  # Exibindo os valores do terceiro Produto
 
 
 # Executando o teste
