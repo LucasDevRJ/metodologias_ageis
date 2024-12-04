@@ -22,5 +22,6 @@ def testar_metodo_cadastrar():
     # Exibindo dados do Cliente
     cliente_cadastrado.exibir_cliente()
 
+
 # Chamando o método de cadastrar
 testar_metodo_cadastrar()
