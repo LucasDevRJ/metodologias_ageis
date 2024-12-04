@@ -1,4 +1,6 @@
+# Classe Cliente
 class Cliente:
+    # Construtor do Cliente
     def __init__(self, nome, sobrenome, cpf, nascimento, email, celular):
         self.nome = nome
         self.sobrenome = sobrenome
@@ -7,12 +9,14 @@ class Cliente:
         self.email = email
         self.celular = celular
 
+    # Método para cadastrar Cliente
     def cadastrar(self):
         cliente1 = Cliente('Lucas', 'Pereira', '246.436.460-63', '13/04/1987', 'lucaspereira@hotmail.com',
                            '(24) 99671-8837')
-        return cliente1
+        cliente_cadastrado = cliente1
+        return cliente_cadastrado
 
-
+    # Método para exibir dados do Cliente
     def exibir_cliente(self):
         print(f'Nome: {self.nome}')
         print(f'Sobrenome: {self.sobrenome}')
