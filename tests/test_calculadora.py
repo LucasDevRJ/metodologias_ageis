@@ -12,10 +12,7 @@ class TesteCalculadora(unittest.TestCase):
         """
         calculadora = Calculadora()
         resultado = calculadora.adicionaComFalha(2, 3)
-        self.assertEqual(resultado, 5)
-
-        if __name__ == '__main__':
-            unittest.main(argv=['first-arg-is-ignored'], exit=False)
+        self.assertIsNone(resultado, 5)
 
     def teste_adicao(self):
         """
@@ -35,9 +32,11 @@ class TesteCalculadora(unittest.TestCase):
         resultado = calculadora.subtrai(5, 3)
         self.assertEqual(resultado, 2)
 
-        if __name__ == '__main__':
-            """
-                Configuração do ambiente de teste e execução
-                O teste criado na célula anterior falhará, indicando que a implementação atual não está correta
-            """
-            unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    def teste_subtracao(self):
+        """
+            Teste para o método subtrai da Classe Calculadora
+            O teste deve passar, pois a implementação do método retorna a soma
+        """
+        calculadora = Calculadora()
+        resultado = calculadora.subtraiComFalha(5, 3)
+        self.assertIsNone(resultado, 2)

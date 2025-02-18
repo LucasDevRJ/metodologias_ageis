@@ -7,6 +7,7 @@ class Calculadora:
             Método para adicionar dois números
             Implementação inicial retorna None (falha proposital)
         """
+        return None
 
     #Etapa Red
     def subtraiComFalha(self, a, b):
@@ -14,6 +15,7 @@ class Calculadora:
             Método para subtrair dois números
             Implementação inicial retorna None (falha proposital)
         """
+        return None
 
     #Etapa Green
     def adiciona(self, a, b):
